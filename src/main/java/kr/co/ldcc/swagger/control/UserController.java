@@ -2,6 +2,7 @@ package kr.co.ldcc.swagger.control;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,7 +20,7 @@ import io.swagger.annotations.ApiResponses;
 import kr.co.ldcc.swagger.model.User;
 import kr.co.ldcc.swagger.service.UserServiceImpl;
 
-
+@CrossOrigin(origins = "*")
 @RestController
 @Api(value = "User", tags = { "User"})
 public class UserController {
