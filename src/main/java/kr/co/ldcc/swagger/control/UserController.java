@@ -20,7 +20,6 @@ import io.swagger.annotations.ApiResponses;
 import kr.co.ldcc.swagger.model.User;
 import kr.co.ldcc.swagger.service.UserServiceImpl;
 
-@CrossOrigin(origins = "*")
 @RestController
 @Api(value = "User", tags = { "User"})
 public class UserController {
