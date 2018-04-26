@@ -21,6 +21,7 @@ import kr.co.ldcc.swagger.model.User;
 import kr.co.ldcc.swagger.service.UserServiceImpl;
 
 @RestController
+//@CrossOrigin(origins = "*")
 @Api(value = "User", tags = { "User"})
 public class UserController {
 	//
